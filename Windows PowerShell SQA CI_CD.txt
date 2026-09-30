@@ -1,0 +1,349 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+PS C:\Users\IIT DU> ci_cd>https://github.com/JamesAnthonyPurification/test_ci_cd_class.git
+ci_cd>https://github.com/JamesAnthonyPurification/test_ci_cd_class.git : The term
+'ci_cd>https://github.com/JamesAnthonyPurification/test_ci_cd_class.git' is not recognized as the name of a cmdlet,
+function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the
+path is correct and try again.
+At line:1 char:1
++ ci_cd>https://github.com/JamesAnthonyPurification/test_ci_cd_class.gi ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (ci_cd>https://g...ci_cd_class.git:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\IIT DU> git clone https://github.com/JamesAnthonyPurification/test_ci_cd_class.git
+Cloning into 'test_ci_cd_class'...
+warning: You appear to have cloned an empty repository.
+PS C:\Users\IIT DU> git clone https://github.com/JamesAnthonyPurification/test_ci_cd_class.git ci_cd
+Cloning into 'ci_cd'...
+warning: You appear to have cloned an empty repository.
+PS C:\Users\IIT DU> cd ci_cdcd ci_cd
+Set-Location : A positional parameter cannot be found that accepts argument 'ci_cd'.
+At line:1 char:1
++ cd ci_cdcd ci_cd
++ ~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Location], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\IIT DU> cd ci_cd
+PS C:\Users\IIT DU\ci_cd> git clone https://github.com/JamesAnthonyPurification/test_ci_cd_class.git
+Cloning into 'test_ci_cd_class'...
+warning: You appear to have cloned an empty repository.
+PS C:\Users\IIT DU\ci_cd> test_ci_cd_class> git status
+test_ci_cd_class> : The term 'test_ci_cd_class>' is not recognized as the name of
+a cmdlet, function, script file, or operable program. Check the spelling of the
+name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ test_ci_cd_class> git status
++ ~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (test_ci_cd_class>:String) [], Comm
+   andNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\IIT DU\ci_cd> ^C
+PS C:\Users\IIT DU\ci_cd> cd test_ci_cd_class
+PS C:\Users\IIT DU\ci_cd\test_ci_cd_class> git status
+On branch main
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+PS C:\Users\IIT DU\ci_cd\test_ci_cd_class> git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Disable this message with "git config set advice.addEmptyPathspec false"
+PS C:\Users\IIT DU\ci_cd\test_ci_cd_class> git commit -m "Add python calculator classroom files"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'IIT DU@DESKTOP-218PR0N.(none)')
+PS C:\Users\IIT DU\ci_cd\test_ci_cd_class> git push origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/JamesAnthonyPurification/test_ci_cd_class.git'
+PS C:\Users\IIT DU\ci_cd\test_ci_cd_class> git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/JamesAnthonyPurification/test_ci_cd_class.git'
+PS C:\Users\IIT DU\ci_cd\test_ci_cd_class> git config --global user.email "japurification16@gmail.com"
+PS C:\Users\IIT DU\ci_cd\test_ci_cd_class> git commit -m "Add python calculator classroom files"
+On branch main
+
+Initial commit
+
+nothing to commit (create/copy files and use "git add" to track)
+PS C:\Users\IIT DU\ci_cd\test_ci_cd_class> git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/JamesAnthonyPurification/test_ci_cd_class.git'
+PS C:\Users\IIT DU\ci_cd\test_ci_cd_class> git commit -m "Add python calculator classroom files"
+On branch main
+
+Initial commit
+
+nothing to commit (create/copy files and use "git add" to track)
+PS C:\Users\IIT DU\ci_cd\test_ci_cd_class> git commit -m "Add python calculator classroom files"
+On branch main
+
+Initial commit
+
+nothing to commit (create/copy files and use "git add" to track)
+PS C:\Users\IIT DU\ci_cd\test_ci_cd_class> git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Disable this message with "git config set advice.addEmptyPathspec false"
+PS C:\Users\IIT DU\ci_cd\test_ci_cd_class> git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Disable this message with "git config set advice.addEmptyPathspec false"
+PS C:\Users\IIT DU\ci_cd\test_ci_cd_class> git config --global user.name "James Anthony Purification"
+PS C:\Users\IIT DU\ci_cd\test_ci_cd_class> git add .
+PS C:\Users\IIT DU\ci_cd\test_ci_cd_class> git commit -m "Add calculator and test files"
+On branch main
+
+Initial commit
+
+nothing to commit (create/copy files and use "git add" to track)
+PS C:\Users\IIT DU\ci_cd\test_ci_cd_class> git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/JamesAnthonyPurification/test_ci_cd_class.git'
+PS C:\Users\IIT DU\ci_cd\test_ci_cd_class> ^C
+PS C:\Users\IIT DU\ci_cd\test_ci_cd_class> ls
+PS C:\Users\IIT DU\ci_cd\test_ci_cd_class> git add .
+PS C:\Users\IIT DU\ci_cd\test_ci_cd_class> git status
+On branch main
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+PS C:\Users\IIT DU\ci_cd\test_ci_cd_class> git add .
+PS C:\Users\IIT DU\ci_cd\test_ci_cd_class> git commit -m "Add calculator and test files"
+On branch main
+
+Initial commit
+
+nothing to commit (create/copy files and use "git add" to track)
+PS C:\Users\IIT DU\ci_cd\test_ci_cd_class> git commit -m "Add calculator and test files"
+On branch main
+
+Initial commit
+
+nothing to commit (create/copy files and use "git add" to track)
+PS C:\Users\IIT DU\ci_cd\test_ci_cd_class> git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/JamesAnthonyPurification/test_ci_cd_class.git'
+PS C:\Users\IIT DU\ci_cd\test_ci_cd_class> New-Item -Path . -Name "calculator.py" -ItemType "file"
+
+
+    Directory: C:\Users\IIT DU\ci_cd\test_ci_cd_class
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         9/30/2026   9:18 PM              0 calculator.py
+
+
+PS C:\Users\IIT DU\ci_cd\test_ci_cd_class> git add .
+PS C:\Users\IIT DU\ci_cd\test_ci_cd_class> git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   calculator.py
+
+PS C:\Users\IIT DU\ci_cd\test_ci_cd_class> git commit -m "Initial commit with calculator files"
+[main (root-commit) c48a8fd] Initial commit with calculator files
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 calculator.py
+PS C:\Users\IIT DU\ci_cd\test_ci_cd_class> git branch -M main
+PS C:\Users\IIT DU\ci_cd\test_ci_cd_class> git push -u origin main
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 246 bytes | 246.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/JamesAnthonyPurification/test_ci_cd_class.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+PS C:\Users\IIT DU\ci_cd\test_ci_cd_class> git commit -m "Add calculator.py and test_calculator.py"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\Users\IIT DU\ci_cd\test_ci_cd_class> git branch -M main
+PS C:\Users\IIT DU\ci_cd\test_ci_cd_class> git push -u origin main
+To https://github.com/JamesAnthonyPurification/test_ci_cd_class.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/JamesAnthonyPurification/test_ci_cd_class.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+PS C:\Users\IIT DU\ci_cd\test_ci_cd_class> ^C
+PS C:\Users\IIT DU\ci_cd\test_ci_cd_class> git pull origin main --rebase
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 5 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (5/5), 1.57 KiB | 18.00 KiB/s, done.
+From https://github.com/JamesAnthonyPurification/test_ci_cd_class
+ * branch            main       -> FETCH_HEAD
+   c48a8fd..473add3  main       -> origin/main
+Updating c48a8fd..473add3
+Fast-forward
+ .github/workflows/deploy.yml | 36 ++++++++++++++++++++++++++++++++++++
+ 1 file changed, 36 insertions(+)
+ create mode 100644 .github/workflows/deploy.yml
+PS C:\Users\IIT DU\ci_cd\test_ci_cd_class> git push -u origin main
+branch 'main' set up to track 'origin/main'.
+Everything up-to-date
+PS C:\Users\IIT DU\ci_cd\test_ci_cd_class> git push -u origin main --force
+branch 'main' set up to track 'origin/main'.
+Everything up-to-date
+PS C:\Users\IIT DU\ci_cd\test_ci_cd_class> # 1. Create calculator.py
+PS C:\Users\IIT DU\ci_cd\test_ci_cd_class> @'
+>> def add(a: float | int, b: float | int) -> float | int:
+>>     return a + b  # Return the sum to the caller.
+>>
+>>
+>> def subtract(a: float | int, b: float | int) -> float | int:
+>>     return a - b  # Return the difference to the caller.
+>>
+>>
+>> def multiply(a: float | int, b: float | int) -> float | int:
+>>     return a * b  # Return the product to the caller.
+>>
+>>
+>> def divide(a: float | int, b: float | int) -> float | int:
+>>     if b == 0:
+>>         raise ValueError("Cannot divide by zero.")
+>>     return a / b  # Return a floating-point quotient.
+>>
+>>
+>> def power(base: float | int, exponent: int) -> float | int:
+>>     if base == 0 and exponent < 0:
+>>         raise ValueError("Zero cannot have a negative exponent.")
+>>     return base ** exponent
+>> '@ | Out-File -Encoding utf8 calculator.py
+PS C:\Users\IIT DU\ci_cd\test_ci_cd_class>
+PS C:\Users\IIT DU\ci_cd\test_ci_cd_class> # 2. Create test_calculator.py
+PS C:\Users\IIT DU\ci_cd\test_ci_cd_class> @'
+>> import pytest
+>> from calculator import add, subtract, multiply, divide, power
+>>
+>>
+>> def test_add():
+>>     assert add(2, 3) == 5
+>>     assert add(-1, 1) == 0
+>>
+>>
+>> def test_subtract():
+>>     assert subtract(5, 3) == 2
+>>     assert subtract(3, 5) == -2
+>>
+>>
+>> def test_multiply():
+>>     assert multiply(4, 3) == 12
+>>     assert multiply(-2, 3) == -6
+>>
+>>
+>> def test_divide():
+>>     assert divide(10, 2) == 5.0
+>>
+>>
+>> def test_power():
+>>     assert power(2, 3) == 8
+>>     assert power(5, 0) == 1
+>> '@ | Out-File -Encoding utf8 test_calculator.py
+PS C:\Users\IIT DU\ci_cd\test_ci_cd_class>
+PS C:\Users\IIT DU\ci_cd\test_ci_cd_class> # 3. Create app.py
+PS C:\Users\IIT DU\ci_cd\test_ci_cd_class> @'
+>> from calculator import add, subtract, multiply, divide, power
+>>
+>>
+>> def main():
+>>     print("=== Python Calculator Classroom ===")
+>>     print("1. Add\n2. Subtract\n3. Multiply\n4. Divide\n5. Power\n6. Exit")
+>>
+>>     while True:
+>>         choice = input("\nSelect choice (1-6): ").strip()
+>>         if choice == "6":
+>>             print("Exiting...")
+>>             break
+>>
+>>         if choice not in ["1", "2", "3", "4", "5"]:
+>>             print("Invalid choice. Try again.")
+>>             continue
+>>
+>>         try:
+>>             num1 = float(input("Enter first number: "))
+>>             num2 = float(input("Enter second number: "))
+>>
+>>             if choice == "1":
+>>                 print(f"Result: {add(num1, num2)}")
+>>             elif choice == "2":
+>>                 print(f"Result: {subtract(num1, num2)}")
+>>             elif choice == "3":
+>>                 print(f"Result: {multiply(num1, num2)}")
+>>             elif choice == "4":
+>>                 print(f"Result: {divide(num1, num2)}")
+>>             elif choice == "5":
+>>                 print(f"Result: {power(num1, int(num2))}")
+>>         except ValueError as e:
+>>             print(f"Error: {e}")
+>>
+>>
+>> if __name__ == "__main__":
+>>     main()
+>> '@ | Out-File -Encoding utf8 app.py
+PS C:\Users\IIT DU\ci_cd\test_ci_cd_class>
+PS C:\Users\IIT DU\ci_cd\test_ci_cd_class> # 4. Create requirements.txt
+PS C:\Users\IIT DU\ci_cd\test_ci_cd_class> @'
+>> pytest>=7.0.0
+>> '@ | Out-File -Encoding utf8 requirements.txt
+PS C:\Users\IIT DU\ci_cd\test_ci_cd_class> git add .
+warning: in the working copy of 'calculator.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'app.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'test_calculator.py', LF will be replaced by CRLF the next time Git touches it
+PS C:\Users\IIT DU\ci_cd\test_ci_cd_class> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   app.py
+        modified:   calculator.py
+        new file:   requirements.txt
+        new file:   test_calculator.py
+
+PS C:\Users\IIT DU\ci_cd\test_ci_cd_class> git commit -m "Add complete calculator application, unit tests, and requirements"
+[main fa951d2] Add complete calculator application, unit tests, and requirements
+ 4 files changed, 86 insertions(+)
+ create mode 100644 app.py
+ create mode 100644 requirements.txt
+ create mode 100644 test_calculator.py
+PS C:\Users\IIT DU\ci_cd\test_ci_cd_class> git push -u origin main
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 1.33 KiB | 1.33 MiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/JamesAnthonyPurification/test_ci_cd_class.git
+   473add3..fa951d2  main -> main
+branch 'main' set up to track 'origin/main'.
+PS C:\Users\IIT DU\ci_cd\test_ci_cd_class>
+
+
+
+
